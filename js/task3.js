@@ -6,8 +6,8 @@ class Storage {
   getItems() {
     return this.items;
   }
-  addItem(item) {
-    this.items = [...this.items, item];
+  addItem(item) {    
+    this.items.push(item);
   }
   removeItem(item) {
     this.items = this.items.filter(i => i !==item)
